@@ -1,0 +1,14 @@
+| Function            | Purpose                            |
+| ------------------- | ---------------------------------- |
+| `isnull()`          | Find missing values                |
+| `notnull()`         | Find existing values               |
+| `isnull().sum()`    | Count missing values               |
+| `dropna()`          | Remove rows with missing values    |
+| `dropna(axis=1)`    | Remove columns with missing values |
+| `fillna(0)`         | Replace missing values with 0      |
+| `fillna(mean())`    | Replace with average               |
+| `fillna(median())`  | Replace with median                |
+| `fillna(mode()[0])` | Replace with most frequent value   |
+| `replace()`         | Replace existing values            |
+| `duplicated()`      | Find duplicate rows                |
+| `drop_duplicates()` | Remove duplicate rows              |
