@@ -81,5 +81,26 @@ df.set_index("customer_id",inplace=True)
 print(df)
 
 #want customer details enter custmer Details
-no=int(input("Enter the Number of Custmer:"))
-print(df.loc[no])
+#no=int(input("Enter the Number of Custmer:"))
+#print(df.loc[no])
+
+print("\n Return Count Mean Medium Satandar Devation Percentage")
+print(df.describe())
+
+print("\n Return the Colunns DataType int str float ")
+print(df.dtypes)
+
+#--------------Type of Data in Pandas--------------
+#1)1-Dimension Srires
+#2)2-Dimension  Dataframe
+
+#1)1-Dimension Srires
+Series=pd.Series([70,80,90,100],index=[1,2,3,4])
+print(Series)
+
+#2)2-Dimension  Dataframe
+DataFrame=pd.DataFrame([[10,20,30],
+                       [10,20,30],
+                       [10,20,30]],columns=["sub1","sub2","sub3"])
+print(DataFrame)
+
