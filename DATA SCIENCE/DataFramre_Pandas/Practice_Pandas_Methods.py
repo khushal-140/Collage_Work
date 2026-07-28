@@ -12,6 +12,7 @@ data = {
         "Riya", "Sanjay", "Isha", "Manish", "Komal"
     ],
 
+
     "city": [
         "Ahmedabad", "Surat", "Rajkot", "Vadodara", "Ahmedabad",
         "Surat", "Mumbai", "Delhi", "Pune", "Rajkot",
