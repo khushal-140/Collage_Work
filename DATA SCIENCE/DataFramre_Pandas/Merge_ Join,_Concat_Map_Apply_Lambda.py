@@ -12,6 +12,11 @@ Department={
     "DepartmentName":["IT","HR","Sales"]
 }
 
+Department={
+    "DepartmentID":[1,2,3],
+    "DepartmentName":["IT","HR","Sales"]
+}
+
 employee=pd.DataFrame(employee)
 department=pd.DataFrame(Department)
 
