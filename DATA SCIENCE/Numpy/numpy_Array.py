@@ -2,7 +2,7 @@ import numpy as np
 data=np.array([[10,20,30,40],
               [50,60,70,71]])
 print(data)
-print(data[0,1])
+print(data[0,1])#Row Columns
 print(data[1,3])
 print(data[0,0:3])
 print(data[0,:])
@@ -33,3 +33,8 @@ print("Mulitiplication:",Mul)
 print("Subration: ",sub)
 print("Division:",div)
 print("Square Root",squaroot)
+
+
+
+
+
