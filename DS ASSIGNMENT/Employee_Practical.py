@@ -117,3 +117,19 @@ print(df.groupby("Department")["Name"].count().idxmax())
 print(df.groupby("Department")["Salary"].mean().idxmax())
 #Which department has the highest average Rating
 print(df.groupby("Department")["Rating"].mean().idxmax())
+
+
+
+
+
+
+
+
+
+# Management Questions
+#Which department has the largest number of employees?
+print(df.groupby("Department")["Name"].count().idxmax())
+# Which department has the highest average Salary?
+print(df.groupby("Department")["Salary"].mean().idxmax())
+#Which department has the highest average Rating
+print(df.groupby("Department")["Rating"].mean().idxmax())
