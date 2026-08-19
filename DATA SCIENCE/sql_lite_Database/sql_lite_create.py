@@ -4,7 +4,7 @@ conn=sqlite3.connect("Demo.db")
 #create Table
 conn.execute("""
              create table if not exists Demo1(
-             c_id integer,
+             c_id integer primary key,
              c_name Text
              )
              """)
@@ -13,4 +13,4 @@ conn.executemany(""" Insert into Demo1
                  [(101,"admin")])
 conn.commit()
 
-print(pd.read_sql_query("""select*from Demo1""",conn))
+print(pd.read_sql_query("Select *from demo1",conn))
