@@ -68,5 +68,44 @@ conn.executemany("insert into sales values(?,?,?,?,?,?,?)",
 # q11="select *from sales order by City, Price desc  "
 # print(pd.read_sql_query(q11,conn))
 
-q11="select *from sales order by City, Price desc  "
-print(pd.read_sql_query(q11,conn))
+# q11="select *from sales order by City, Price desc  "
+# print(pd.read_sql_query(q11,conn))
+
+# q11="select *from sales order by City, Price desc  "
+# print(pd.read_sql_query(q11,conn))
+
+# q12="select count(*) as Total_Number_Record from sales  "
+# print(pd.read_sql_query(q12,conn))
+
+# q13="select City, count(*) as Total_Number_City from sales group by city  "
+# print(pd.read_sql_query(q13,conn))
+
+# q14="select  sum(Quantity) as Total_Quantity from sales "
+# print(pd.read_sql_query(q14,conn))
+
+# q15="select Category, sum(Quantity) as Total_Quantity_Category from sales group by Category "
+# print(pd.read_sql_query(q15,conn))
+
+# q16="select min(Price) as Min_Price from sales"
+# print(pd.read_sql_query(q16,conn))
+
+# q17="select max(Price) as Max_Price from sales"
+# print(pd.read_sql_query(q17,conn))
+
+# q18="select Category, max(Price) as Max_Price,min(Price) as Min_Price from sales group by Category"
+# print(pd.read_sql_query(q18,conn))
+
+# q19="select Category,count(Category) as Number_Cateogory, sum(Quantity) as Total_Quantity from sales group by Category"
+# print(pd.read_sql_query(q19,conn))
+
+# q20="select City,count(Quantity) as Total_Quantity from sales group by City order by Total_Quantity desc  " 
+# print(pd.read_sql_query(q20,conn))  
+
+# q21="select Product,count(Product) as Total_Product from sales group by Product order by Total_Product desc  " 
+# print(pd.read_sql_query(q21,conn))  
+
+# q22="select Category,count(*) as Sales_Number, sum(Quantity) as Total_qyt,min(price) as Min_Price,max(price) as max_Price from sales  group by Category order by Total_qyt" 
+# print(pd.read_sql_query(q22,conn))  
+
+# q23="select Product,price from sales order by Price desc limit(5) "
+# print(pd.read_sql_query(q23,conn))  
