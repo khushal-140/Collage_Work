@@ -109,3 +109,5 @@ conn.executemany("insert into sales values(?,?,?,?,?,?,?)",
 
 # q23="select Product,price from sales order by Price desc limit(5) "
 # print(pd.read_sql_query(q23,conn))  
+
+print(pd.read_sql_query("select *from sales",conn))
