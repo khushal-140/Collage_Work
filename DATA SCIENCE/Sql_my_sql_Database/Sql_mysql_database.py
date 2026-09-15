@@ -31,17 +31,18 @@ cur=conn.cursor()
 
 print("Data inserted successfully")
 conn.commit()
-cur.execute("select *from customer")
+cur.execute("select *from order_customer")
 data=cur.fetchall()
 print("Data fetched successfully")
 print("----------------Displaying data from the table Database:--------------")
 for row in data:
     print(row)
     
-cur.execute("select id,name from customer where order_id=103")
+cur.execute("select id,name from order_customer where order_id=103")
 customer_data=cur.fetchall()
 print("Data fetched successfully")
 print("----------------Displaying data for order ID 103:--------------")
 for row in customer_data:
     print(row)
     
+
